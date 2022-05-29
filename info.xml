@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<messages>
+    <message id="info">
+        <div class="d-flex flex-column gap-2 m-2">
+            <h2 class="text-center">${title}</h2>
+            <div class="row bg-dark p-3 rounded-3">
+                <div class="d-flex pt-3 pe-3 justify-content-end"><small class="badge bg-success align-self-right">Время в пути: ~${time} мин.</small></div>
+                <div class="col-4 p-4">
+                    <div class="d-flex flex-column gap-3">
+                        <img src="${photo}" width="100%" class="rounded-3" height="auto" />
+                        <div class="d-flex flex-column border-top border-white pt-3 gap-2">
+                            <small>Цена: ${price} руб.</small>
+                            <small>Этажей: ${floor}/${floor_max}</small>
+                            <small>Адрес: ${address}</small>
+                            <small>Метро: ${station}</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 p-4" style="text-align: justify">
+                    ${description}
+                </div>
+            </div>
+        </div>
+    </message>
+</messages>
